@@ -106,8 +106,8 @@
 <h2 class="hasAnchor">
 <a href="#deploy-for-developer" class="anchor"></a>Deploy (for developer)</h2>
 <div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" title="1"><span class="co"># https://www.shinyapps.io/admin/#/tokens</span></a>
-<a class="sourceLine" id="cb2-2" title="2">rsconnect<span class="op">::</span><span class="kw"><a href="https://www.rdocumentation.org/packages/rsconnect/topics/deployApp">deployApp</a></span>(<span class="st">'inst/shiny/population-genetics-monte-carlo-simulation/'</span>, <span class="dt">forceUpdate =</span> T)</a>
-<a class="sourceLine" id="cb2-3" title="3">rsconnect<span class="op">::</span><span class="kw"><a href="https://www.rdocumentation.org/packages/rsconnect/topics/deployApp">deployApp</a></span>(<span class="st">'inst/shiny/population-genetics-monte-carlo-simulation2/'</span>, <span class="dt">forceUpdate =</span> T)</a></code></pre></div>
+<a class="sourceLine" id="cb2-2" title="2">rsconnect<span class="op">::</span><span class="kw"><a href="https://www.rdocumentation.org/packages/rsconnect/topics/deployApp">deployApp</a></span>(<span class="st">'inst/shiny/pgmcs/'</span>, <span class="dt">appName=</span> <span class="st">'population-genetics-monte-carlo-simulation'</span>, <span class="dt">forceUpdate =</span> T)</a>
+<a class="sourceLine" id="cb2-3" title="3">rsconnect<span class="op">::</span><span class="kw"><a href="https://www.rdocumentation.org/packages/rsconnect/topics/deployApp">deployApp</a></span>(<span class="st">'inst/shiny/pgmcs/'</span>,  <span class="dt">appName=</span> <span class="st">'population-genetics-monte-carlo-simulation2'</span>, <span class="dt">forceUpdate =</span> T)</a></code></pre></div>
 <blockquote>
 <p>configuration is saved in the <code>rsconnect/</code> subdir under app folder</p>
 </blockquote>
