@@ -1,0 +1,10 @@
+pandoc: 2.8.0.1
+pkgdown: 1.4.1
+pkgdown_sha: ~
+articles:
+  beginner: beginner.html
+  pgmcs: pgmcs.html
+urls:
+  reference: https://dongzhuoer.github.io/pgmcs/reference
+  article: https://dongzhuoer.github.io/pgmcs/articles
+
