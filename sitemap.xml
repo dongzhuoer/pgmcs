@@ -1,21 +1,72 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://dongzhuoer.github.io/pgmcs/index.html</loc>
+    <loc>https://dongzhuoer.github.io/bisecpp/404.html</loc>
   </url>
   <url>
-    <loc>https://dongzhuoer.github.io/pgmcs/reference/demo_population_simulation.html</loc>
+    <loc>https://dongzhuoer.github.io/bisecpp/LICENSE-text.html</loc>
   </url>
   <url>
-    <loc>https://dongzhuoer.github.io/pgmcs/reference/population_simulation.html</loc>
+    <loc>https://dongzhuoer.github.io/bisecpp/articles/beginner.html</loc>
   </url>
   <url>
-    <loc>https://dongzhuoer.github.io/pgmcs/reference/reexports.html</loc>
+    <loc>https://dongzhuoer.github.io/bisecpp/articles/bisecpp.html</loc>
   </url>
   <url>
-    <loc>https://dongzhuoer.github.io/pgmcs/articles/beginner.html</loc>
+    <loc>https://dongzhuoer.github.io/bisecpp/articles/index.html</loc>
   </url>
   <url>
-    <loc>https://dongzhuoer.github.io/pgmcs/articles/pgmcs.html</loc>
+    <loc>https://dongzhuoer.github.io/bisecpp/articles/pgmcs.html</loc>
+  </url>
+  <url>
+    <loc>https://dongzhuoer.github.io/bisecpp/authors.html</loc>
+  </url>
+  <url>
+    <loc>https://dongzhuoer.github.io/bisecpp/index.html</loc>
+  </url>
+  <url>
+    <loc>https://dongzhuoer.github.io/bisecpp/news/index.html</loc>
+  </url>
+  <url>
+    <loc>https://dongzhuoer.github.io/bisecpp/reference/R_square.html</loc>
+  </url>
+  <url>
+    <loc>https://dongzhuoer.github.io/bisecpp/reference/assess.html</loc>
+  </url>
+  <url>
+    <loc>https://dongzhuoer.github.io/bisecpp/reference/base.html</loc>
+  </url>
+  <url>
+    <loc>https://dongzhuoer.github.io/bisecpp/reference/biosec_optim_impl.html</loc>
+  </url>
+  <url>
+    <loc>https://dongzhuoer.github.io/bisecpp/reference/bisec_fit.html</loc>
+  </url>
+  <url>
+    <loc>https://dongzhuoer.github.io/bisecpp/reference/bisec_optim.html</loc>
+  </url>
+  <url>
+    <loc>https://dongzhuoer.github.io/bisecpp/reference/demo_population_simulation.html</loc>
+  </url>
+  <url>
+    <loc>https://dongzhuoer.github.io/bisecpp/reference/f_AI2_out.html</loc>
+  </url>
+  <url>
+    <loc>https://dongzhuoer.github.io/bisecpp/reference/f_protein.html</loc>
+  </url>
+  <url>
+    <loc>https://dongzhuoer.github.io/bisecpp/reference/index.html</loc>
+  </url>
+  <url>
+    <loc>https://dongzhuoer.github.io/bisecpp/reference/population_simulation.html</loc>
+  </url>
+  <url>
+    <loc>https://dongzhuoer.github.io/bisecpp/reference/reexports.html</loc>
+  </url>
+  <url>
+    <loc>https://dongzhuoer.github.io/bisecpp/reference/simulate_data.html</loc>
+  </url>
+  <url>
+    <loc>https://dongzhuoer.github.io/bisecpp/reference/simulate_partition_fit.html</loc>
   </url>
 </urlset>
