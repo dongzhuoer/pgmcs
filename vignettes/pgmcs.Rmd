@@ -1,10 +1,10 @@
 ---
-title: "Introduction to minir"
+title: "Introduction to pgmcs"
 author: "Zhuoer Dong"
 date: "`r Sys.Date()`"
-output: rmarkdown::html_vignette
+output: prettydoc::html_pretty
 vignette: >
-  %\VignetteIndexEntry{Introduction to minir}
+  %\VignetteIndexEntry{Introduction to pgmcs}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
@@ -13,15 +13,63 @@ vignette: >
 knitr::opts_chunk$set(collapse = TRUE, comment = "#>", cache = TRUE)
 ```
 
+
+
 ```{r}
 library(pgmcs)
 
 suppressWarnings(RNGversion('3.5.2'))
 ```
 
-# Command line usage
 
-## Figure 20.8 at P671. 
+
+# Web App
+
+The package is very simple to use, all you need is a browser, like Chrome.
+
+- [dynamic mode](https://dongzhuoer.shinyapps.io/population-genetics-monte-carlo-simulation/)
+- [static mode](https://dongzhuoer.shinyapps.io/population-genetics-monte-carlo-simulation2/)
+
+But if you can't stand the low speed, and the unstable connection demanding frequent refresh, you may consider the following approach.
+
+
+
+# Run on your own computer
+
+In this way, you can free from the above troubles. It's very easy, you just need to install R, which is even simpler than QQ.
+
+1. install [R](https://www.r-project.org/) (use [this](https://cran.r-project.org/bin/windows/base/) for Windows users.)
+
+2. open R and install this package
+
+```r
+if (!('remotes' %in% .packages(T))) install.packages('remotes');
+remotes::install_github('dongzhuoer/pgmcs');
+```
+
+3. open R and run the application
+
+```r
+shiny::runApp(system.file('shiny/pgmcs', package = 'pgmcs'))
+shiny::runApp(system.file('shiny/pgmcs2', package = 'pgmcs'))
+```
+
+
+
+# Command line interface
+
+If you are familiar with R, you can get rid of the limit on population size and generation number, and try whatever parameters you like. 
+
+```{r}
+set.seed(0);
+demo_population_simulation(100, 250, c(0, 490, 10), c(1, 1, 1), 'drift')
+demo_population_simulation(100, 250, c(0, 490, 10), c(1, 1, 0.95), 'select A')
+```
+
+The following code reproduce the figures in 20.2 of _Genetics From Genes to Genomes, 5th_
+
+
+## Figure 20.8 at P671
 
 Initial population are all heterozygotes.
 
@@ -35,37 +83,13 @@ set.seed(0);
 demo_population_simulation(6, 30, c(0, 500, 0), c(1, 1, 1), "Large population: Little genetic drift");
 ```
 
-## Figure 20.13 at P676. 
+
+## Figure 20.13 at P676
 
 499*bb + 1*Bb; WBB = 1.0, WBb = 1.0, Wbb = 0.98 (adjusted to 0.97)
 
 ```{r}
-set.seed(57);
+set.seed(885);  # 57
 demo_population_simulation(6, 900, c(0, 1, 499), c(1,1,0.97), "Natural selection together with genetic
 drift")
 ```
-
-```{r}
-set.seed(885);
-demo_population_simulation(6, 900, c(0, 1, 499), c(1,1,0.97), "Natural selection together with genetic
-drift")
-```
-
-## Draft vs Selection
-
-```{r}
-set.seed(0);
-demo_population_simulation(100, 250, c(0, 490, 10), c(1, 1, 1), 'drift')
-demo_population_simulation(100, 250, c(0, 490, 10), c(1, 1, 0.95), 'select A')
-```
-
-# Shiny App
-
-```r
-shiny::runApp(system.file('shiny/population-genetics-monte-carlo-simulation', package = 'pgmcs'))
-shiny::runApp(system.file('shiny/population-genetics-monte-carlo-simulation2', package = 'pgmcs'))
-```
-
-----------------------------------
-
-If you get interested in these figures, but feel scared about the code, please refer to `vignette('beginner')`

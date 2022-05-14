@@ -10,10 +10,11 @@
 #' @param title string. Plot title.
 #'
 #' @return an ggplot object
-#' @export
 #'
 #' @section Shiny app:
 #' `shiny::runApp(system.file('shiny', package = 'pgs'))`
+#' 
+#' @export
 demo_population_simulation <- function(nrun, ngeneration, population, fitness, title) {
     plyr::ldply(1:nrun, function(i){
         data.frame(irun = i, igeneration = seq_len(ngeneration),

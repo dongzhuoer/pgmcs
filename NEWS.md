@@ -5,7 +5,6 @@
 1. shorten name of shiny App folder, avoid too long path for `remotes::install_git('.')`
 
 
-
 # pgmcs 0.3.1
 
 ## Minor improvements and fixes
@@ -13,7 +12,6 @@
 1. add `RNGversion('3.5.2')` to make vignette and shiny example reproduciable  
    > The default method for generating from a discrete uniform distribution (used in `sample()`, for instance) has been changed.  
    > --- [CHANGES IN R 3.6.0](https://cran.r-project.org/doc/manuals/r-devel/NEWS.html)
-
 
 
 # pgmcs 0.3.0
@@ -24,13 +22,11 @@
 1. add testthat
 
 
-
 # pgmcs 0.2.1
 
 ## Minor improvements and fixes
 
 1. fix package dependencies  (#1)
-
 
 
 # pgmcs 0.2.0
@@ -41,12 +37,11 @@
 
 ## New features
 
-1. a new Shiny app which is much faster (Calculation is only performed after user has pressed the "Run" button). 
+1. a new Shiny app which is much faster (Calculation is only performed after user has pressed the "Run" button).   
 
 ## Minor improvements and fixes
 
-1. Polish app's style, make it into a 1366\*768 screen ^[it should can if the user don't have too much thing up and down in the screen, such as toolbar, menubar. Anyway I don't make sure since I don't have a 1366\*768 laptop.] .
-
+1. Polish app's style, make it into a 1366\*768 screen. (It should can if the user don't have too much thing up and down in the screen, such as toolbar, menubar. Anyway I don't make sure since I don't have a 1366\*768 laptop.)
 
 
 # pgs 0.1.0

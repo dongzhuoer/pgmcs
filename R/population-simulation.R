@@ -65,6 +65,3 @@ population_simulation <- function(ngeneration, population, fitness = c(1, 1, 1))
 
     return(A.frequency);
 }
-
-
-
